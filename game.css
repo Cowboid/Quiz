@@ -1,0 +1,86 @@
+:root {
+    font-size: 62.5%;
+    background-color: royalblue;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.question {
+    margin-bottom: 1rem;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 5px;
+    background-color: white;
+    align-items: center;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    transform: translateY(-0.1rem);
+    box-shadow: 0.4rem 0.4rem rgba(0, 0, 0, 0.329);
+}
+
+.prefix {
+    background-color: rgb(160, 11, 160);
+    padding: 0.5rem 0.9rem;
+}
+
+.choice {
+    padding-left: 5px;
+    width: 100%;
+}
+
+.correct {
+    background-color: rgb(27, 158, 27);
+}
+
+.incorrect {
+    background-color: rgb(170, 34, 34);
+}
+
+.info-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.8rem;
+}
+
+.counter-container,
+.score-container {
+    text-align: center;
+}
+
+.progress-bar {
+    width: 17rem;
+    height: 2.3rem;
+    border: solid rgb(160, 11, 160) 3px;
+    background-color: white;
+}
+
+.bar {
+    background-color: rgb(160, 11, 160);
+    width: 0%;
+    height: 2rem;
+}
